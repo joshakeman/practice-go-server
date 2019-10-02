@@ -8,6 +8,7 @@ import (
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "This is a website server by a Go HTTP server.")
+		fmt.Println("Console log here")
 	})
 
 	http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
@@ -19,3 +20,5 @@ func main() {
 
 	http.ListenAndServe(":3001", nil)
 }
+
+//soive
